@@ -1,0 +1,13 @@
+{% set current_url = h.full_current_url() %}
+{% block social %}
+  <section class="module module-narrow social">
+    {% block social_title %}
+      <h2 class="module-heading"><i class="fa fa-share-square-o"></i> {{ _('Social') }}</h2>
+    {% endblock %}
+    {% block social_nav %}
+      <ul class="nav nav-simple">
+        <li class="nav-item"><p>Social Media links here by default, removed for CFR POC.</li>
+      </ul>
+    {% endblock %}
+  </section>
+{% endblock %}

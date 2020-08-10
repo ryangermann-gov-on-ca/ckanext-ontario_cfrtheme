@@ -1,0 +1,33 @@
+<div role="main" class="hero">
+  <div class="container">
+    <div class="row row1">
+		{% block search %}
+		  {% snippet 'home/snippets/search.html' %}
+		{% endblock %}
+	</div>
+	<br />
+    <div class="row row2">
+		{% block promoted %}
+		  {% snippet 'home/snippets/promoted.html' %}
+		{% endblock %}
+    </div>
+	<br />
+  </div>
+<div role="main">
+  <div class="container">
+    <div class="row row2">
+      <div class="col-md-6 col1">
+        <h2>Facts 'n' Figures:</h2>
+        {% block stats %}
+          {% snippet 'home/snippets/stats.html' %}
+        {% endblock %}
+      </div>
+      <div class="col-md-6 col2">
+        <h2>This Month's Featured Group:</h2>
+        {% block fgrp %}
+          {% snippet 'home/snippets/featured_group.html' %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>
